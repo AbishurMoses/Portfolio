@@ -56,16 +56,32 @@ function App() {
             </div>
           </section>
           <section id="experience">
-            <div id="experience-layout">
-              <div id="experience-title"> <p>Career</p></div>
+            <div id="experience-title">
+              <p id="pro-title">Professional Projects</p>
+            </div>
+            <div id="jobs">
               <div id="symvara" >
-                <div>
-                  <p>Symvara</p>
+                <div id="sym-title-con">
+                  <p><span id="sym-title">Symvara</span> <span id="sym-range">Jul 2023 - Present</span></p>
                 </div>
-                <div>
+                <div id="sym-des-cont">
+                  <p id="sym-des">
+                    Currently working with a team of software engineers to create a comprehensive college housing management software.
+                    The software will enable clients to manage leave tracking, security checks, housing structure, among other
+                    functionalities tailored  to meet the specific needs of a college housing management.
+                  </p>
+                </div>
+                <div id="sym-details-cont">
+                  <ul id="sym-details">
+                    <li> Developing a backend application using <b>NESTJS</b> with <b>MikroORM</b>, <b>MySQL</b> and a Git/Github workflow. </li>
+                    <li> Established connections between the database and backend systems. </li>
+                    <li> Create (number) automated testing suites with (number) individual tests with Jest. </li>
+                    <li> Wrote documentation for endpoints, testing protocols, and database. (for how much) </li>
+                  </ul>
                 </div>
               </div>
             </div>
+
           </section>
           <div id="projects">
 

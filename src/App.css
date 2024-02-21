@@ -3,7 +3,8 @@ html {
 }
 
 body,
-main {
+main,
+div {
   padding: 0px;
   margin: 0px;
   font-family: Lato, sans-serif;
@@ -18,7 +19,7 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #fcfcfc;
+  background-color: #ede4e4;
   gap: 1.5rem;
 }
 
@@ -62,7 +63,7 @@ nav {
   border-radius: 100%;
   width: 1.75rem;
   height: 1.75rem;
-  border: 3px solid #fcfcfc;
+  border: 3px solid #ede4e4;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -127,7 +128,7 @@ nav {
   letter-spacing: 0.05rem;
   text-align: center;
   font-size: 1rem;
-  background-color: #fcfcfc;
+  background-color: #ede4e4;
   padding: 0rem 0.5rem 0rem 0.5rem;
   /* backdrop-filter: blur(20px); */
   width: 65%;
@@ -135,7 +136,7 @@ nav {
 
 #experience {
   width: 70vw;
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 #symvara {
@@ -149,10 +150,85 @@ nav {
   width: 80%;
   height: 80%;
   display: grid;
-  grid-template-areas:
-    "experience-title symvara symvarac";
+  grid-template-areas: "experience-title symvara symvarac";
   gap: 5px;
+}
 
+#experience {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  gap: 8%;
+}
+
+#pro-title {
+  text-align: center;
+  font-size: 2rem;
+}
+
+#experience-title {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+#jobs {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 80%;
+  height: 100%;
+}
+
+#symvara {
+  margin: 3.5% 0 0 0;
+  width: 60%;
+  height: 70%;
+  background-color: #fcfcfc;
+  border-radius: 1.2rem;
+  box-shadow: 3px 2px 2px black;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: auto;
+}
+
+#sym-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 0 10px 0 0;
+}
+
+#sym-range {
+  font-size: 1.1rem;
+  color: #4a4848;
+}
+
+#sym-des-cont {
+  display: flex;
+  justify-content: center;
+}
+
+#sym-des {
+  line-height: 1.5rem;
+  letter-spacing: 0.05rem;
+  padding: 0 5% 0 5%;
+  text-align: center;
+}
+
+#sym-details-cont {
+  width: 80%;
+}
+
+#sym-details {
+  line-height: 1.5rem;
+  letter-spacing: 0.05rem;
+  padding: 0 5% 0 5%;
 }
 
 /* 
