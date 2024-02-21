@@ -79,6 +79,11 @@ nav {
 }
 
 #section-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
   width: 70vw;
 }
 
@@ -108,12 +113,12 @@ nav {
   display: flex;
   height: 99.5%;
   width: 35%;
-  border-bottom-left-radius: .5rem;
-  border-top-left-radius: .5rem;
+  border-bottom-left-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
   background-color: green;
   justify-content: center;
   align-items: center;
-  margin: .25rem 0 0 0;
+  margin: 0.25rem 0 0 0;
 }
 
 #wrapper_p > p {
@@ -127,3 +132,31 @@ nav {
   /* backdrop-filter: blur(20px); */
   width: 65%;
 }
+
+#experience {
+  width: 70vw;
+  height: 100vh;
+}
+
+#symvara {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#projects-layout {
+  width: 80%;
+  height: 80%;
+  display: grid;
+  grid-template-areas:
+    "experience-title symvara symvarac";
+  gap: 5px;
+
+}
+
+/* 
+ Unable to zoom-in on hover since background-size is modified. 
+ Only works when background-size is set to 100. This won't work since its 
+ becomes very small 
+*/

@@ -56,7 +56,20 @@ function App() {
             </div>
           </section>
           <section id="experience">
+            <div id="experience-layout">
+              <div id="experience-title"> <p>Career</p></div>
+              <div id="symvara" >
+                <div>
+                  <p>Symvara</p>
+                </div>
+                <div>
+                </div>
+              </div>
+            </div>
           </section>
+          <div id="projects">
+
+          </div>
         </section>
       </main>
     </div>
