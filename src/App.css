@@ -1,10 +1,14 @@
 html {
   font-family: Helvetica, Arial, sans-serif;
 }
+body {
+  background-color: #ede4e4;
+}
 
 body,
 main,
-div {
+div,
+p {
   padding: 0px;
   margin: 0px;
   font-family: Lato, sans-serif;
@@ -186,7 +190,6 @@ nav {
 }
 
 #symvara {
-  margin: 3.5% 0 0 0;
   width: 60%;
   height: 70%;
   background-color: #fcfcfc;
@@ -196,17 +199,22 @@ nav {
   justify-content: flex-start;
   align-items: center;
   overflow: auto;
+  padding: 5px 0 0 0;
+gap: 4%;
 }
 
 #sym-title {
   font-size: 1.5rem;
   font-weight: 600;
   padding: 0 10px 0 0;
+  text-align: center;
+  padding: 0 0 5px 0;
 }
 
 #sym-range {
   font-size: 1.1rem;
   color: #4a4848;
+  text-align: center;
 }
 
 #sym-des-cont {
@@ -231,6 +239,15 @@ nav {
   padding: 0 5% 0 5%;
 }
 
+#sym-lan-cont {
+  width: 90%;
+}
+
+#sym-lan {
+  text-align: center;
+  letter-spacing: 0.02rem;
+  padding: 0 0 15px 0;
+}
 /* 
  Unable to zoom-in on hover since background-size is modified. 
  Only works when background-size is set to 100. This won't work since its 

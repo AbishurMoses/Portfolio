@@ -62,7 +62,8 @@ function App() {
             <div id="jobs">
               <div id="symvara" >
                 <div id="sym-title-con">
-                  <p><span id="sym-title">Symvara</span> <span id="sym-range">Jul 2023 - Present</span></p>
+                  <p id="sym-title">Symvara</p>
+                  <p id="sym-range">Jul 2023 - Present</p>
                 </div>
                 <div id="sym-des-cont">
                   <p id="sym-des">
@@ -75,20 +76,22 @@ function App() {
                   <ul id="sym-details">
                     <li> Developing a backend application using <b>NESTJS</b> with <b>MikroORM</b>, <b>MySQL</b> and a Git/Github workflow. </li>
                     <li> Established connections between the database and backend systems. </li>
-                    <li> Create (number) automated testing suites with (number) individual tests with Jest. </li>
-                    <li> Wrote documentation for endpoints, testing protocols, and database. (for how much) </li>
+                    <li> Created 4 automated testing suites with 200+ individual tests with Jest. </li>
+                    <li> Wrote documentation outlining automated testing procedures and modified existing database documentation. </li>
                   </ul>
+                </div>
+                <div id="sym-lan-cont">
+                  <p id="sym-lan">Used: TypeScript, NestJS, MySQL, Git, Github, Jira</p>
                 </div>
               </div>
             </div>
-
           </section>
           <div id="projects">
 
           </div>
         </section>
       </main>
-    </div>
+    </div >
   )
 }
 
