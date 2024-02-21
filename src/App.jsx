@@ -57,7 +57,7 @@ function App() {
           </section>
           <section id="experience">
             <div id="experience-title">
-              <p id="pro-title">Professional Projects</p>
+              <p id="pro-title">Professional Projects 👉</p>
             </div>
             <div id="jobs">
               <div id="symvara" >
@@ -75,22 +75,24 @@ function App() {
                 <div id="sym-details-cont">
                   <ul id="sym-details">
                     <li> Developing a backend application using <b>NESTJS</b> with <b>MikroORM</b>, <b>MySQL</b> and a Git/Github workflow. </li>
-                    <li> Established connections between the database and backend systems. </li>
-                    <li> Created 4 automated testing suites with 200+ individual tests with Jest. </li>
+                    <li> Implemented automatic schema updates using <b>MikroORM</b> for seamless database management. </li>
+                    <li> Created 4 automated testing suites with 200+ individual tests with <b>Jest</b>. </li>
                     <li> Wrote documentation outlining automated testing procedures and modified existing database documentation. </li>
                   </ul>
                 </div>
                 <div id="sym-lan-cont">
-                  <p id="sym-lan">Used: TypeScript, NestJS, MySQL, Git, Github, Jira</p>
+                  <p id="sym-lan">Utilized: TypeScript, NestJS, MySQL, Jest, Git, Github, Jira</p>
                 </div>
               </div>
             </div>
           </section>
-          <div id="projects">
-
-          </div>
+          <section id="projects">
+            <div id="nuclear-simulator">
+              
+            </div>
+          </section>
         </section>
-      </main>
+      </main >
     </div >
   )
 }

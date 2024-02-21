@@ -200,7 +200,7 @@ nav {
   align-items: center;
   overflow: auto;
   padding: 5px 0 0 0;
-gap: 4%;
+  gap: 4%;
 }
 
 #sym-title {
@@ -239,6 +239,10 @@ gap: 4%;
   padding: 0 5% 0 5%;
 }
 
+#sym-details > li {
+  margin: 0 0 0.5rem 0;
+}
+
 #sym-lan-cont {
   width: 90%;
 }
@@ -247,6 +251,10 @@ gap: 4%;
   text-align: center;
   letter-spacing: 0.02rem;
   padding: 0 0 15px 0;
+}
+
+hr {
+  width: 25%;
 }
 /* 
  Unable to zoom-in on hover since background-size is modified. 
