@@ -11,6 +11,10 @@ function App() {
     setClickedToolBar(!clickedToolBar);
   }
 
+  const nuclear = () => {
+    window.open("https://github.com/AbishurMoses/NuclearPowerSimulator", "_blank")
+  }
+
   return (
     <div>
       <main id="main-cont">
@@ -57,7 +61,7 @@ function App() {
           </section>
           <section id="experience">
             <div id="experience-title">
-              <p id="pro-title">Professional Projects 👉</p>
+              <p id="pro-title">Professional Projects <span>👉</span></p>
             </div>
             <div id="jobs">
               <div id="symvara" >
@@ -87,8 +91,17 @@ function App() {
             </div>
           </section>
           <section id="projects">
-            <div id="nuclear-simulator">
-              
+            <div id="nuclear-sim" onClick={nuclear}>
+              {/* <div id="nuclear-tip" onClick={nuclear}>
+                <p>Nuclear Power Plant Sim</p>
+              </div> */}
+                <p>Nuclear Power Plant Sim</p>
+            </div>
+            <div class="todo-projects">
+              <p>Coding in Process!</p>
+            </div>
+            <div class="todo-projects">
+              <p>Coding in Process!</p>
             </div>
           </section>
         </section>

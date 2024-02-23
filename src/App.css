@@ -190,7 +190,7 @@ nav {
 }
 
 #symvara {
-  width: 60%;
+  width: 75%;
   height: 70%;
   background-color: #fcfcfc;
   border-radius: 1.2rem;
@@ -256,6 +256,98 @@ nav {
 hr {
   width: 25%;
 }
+
+#projects {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 80vh;
+  width: 100%;
+  gap: 15px;
+}
+
+#nuclear-sim,
+.todo-projects {
+  height: 60%;
+  width: calc(100% / 3);
+  background-color: white;
+  border-radius: 2.5%;
+}
+
+.todo-projects {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    43deg,
+    white 40%,
+    #ede4e4 40%,
+    #ede4e4 60%,
+    white 60%,
+    white 100%
+  );
+}
+
+.todo-projects > p {
+  transform: rotate(45deg);
+  font-size: 1.5rem;
+  text-align: center;
+  display: flex;
+}
+
+/* Why is the image clipping */
+#nuclear-sim {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background-image: url("./assets/nuclear.svg");
+  image-rendering: crisp-edges;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+
+#nuclear-sim > p {
+  font-size: 1.5rem;
+  color: white;
+  height: 25%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(10px);
+}
+
+.todo-projects {
+  cursor: url("./assets/hammer.jpg"), auto;
+}
+/* #nuclear-tip {
+  width: 100%;
+  height: 30%;
+  background-color: white;
+  transition: opacity 0.5s ease; 
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom-left-radius: 2.5%;
+  border-bottom-right-radius: 2.5%;
+}
+
+#nuclear-tip:hover {
+  transition: opacity 1s ease; 
+  opacity: 1;
+  cursor: pointer;
+}
+
+#nuclear-tip > p {
+  text-align: center;
+  font-size: 1.5rem;
+} */
+
+/* How to have child commit actions when parent is hovered? */
+
 /* 
  Unable to zoom-in on hover since background-size is modified. 
  Only works when background-size is set to 100. This won't work since its 
