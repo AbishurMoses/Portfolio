@@ -296,7 +296,11 @@ hr {
   display: flex;
 }
 
-/* Why is the image clipping */
+/* 
+  Why is the image clipping 
+  When refressed, white line appears between backdrop and image for 3 seconds and disappears 
+*/
+
 #nuclear-sim {
   display: flex;
   justify-content: center;
@@ -316,9 +320,10 @@ hr {
   display: flex;
   justify-content: center;
   align-items: center;
-  backdrop-filter: blur(10px);
+  backdrop-filter: brightness(60%);
 }
 
+/* Custom cursor not working */
 .todo-projects {
   cursor: url("./assets/hammer.jpg"), auto;
 }
