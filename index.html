@@ -1,78 +1,13 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="./style.css" />
-    <script src="./script.js" defer></script>
-    <title>Document</title>
-</head>
-
-<body>
-    <main id="main-cont">
-        <nav>
-            <div id="title-cont">
-                <p class="title-light title" >Abishur Moses</p>
-            </div>
-            <div id="side-nav-cont">
-                <div class="link-cont" class= "link-cont-light"><a href="https://www.linkedin.com/in/abishur-moses/" target="_blank"
-                        class="fa-brands fa-linkedin" id="link"></a></div>
-                <div class="link-cont link-cont-light"><a
-                        href="https://github.com/AbishurMoses?tab=overview&from=2024-01-01&to=2024-01-06"
-                        target="_blank" class="fa-brands fa-github" id="link2"></a></div>
-                <div id="dropdown">
-                    <i class="fa-solid fa-bars"></i>
-                    <div id="dropdown-content" id="dropdown-content-dark">
-                        <i onclick="mode('lit')" class="fa-regular fa-sun"></i>
-                        <i onclick="mode('cloudy')" class="fa-solid fa-cloud-sun"></i>
-                        <i onclick="mode('dark')" class="fa-solid fa-moon"></i>
-                    </div>
-                </div>
-            </div>
-        </nav>
-        <section id="about-me-cont">
-            <section>
-                <img id="light-profile" src="./assets/happy-stick-figure.jpg" alt="Picture of Abishur Moses" />
-                <img id="dark-profile" src="./assets/dark-stick-figure.jpg" alt="Picture of Abishur Moses" />
-                <p id="about-me-content">Hi, I'm Abishur Moses. Lorem ipsum dolor, sit amet consectetur adipisicing
-                    elit. Quidem aperiam rerum laborum nobis saepe temporibus culpa inventore, incidunt aliquid illo
-                    error, voluptatem quasi odit enim itaque aliquam, deleniti laboriosam dignissimos.</p>
-            </section>
-        </section>
-        <section id="experience-cont">
-            <h1>Experience</h1>
-            <div>
-                <div class="exp" id="exp-1">
-                    <img src="./assets/housing.png" alt="Picture of a house logo" />
-                    <p id="symvara-content">Working at Symvara Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                        Consectetur omnis placeat natus doloribus facilis id, velit est nihil fuga expedita itaque dolor
-                        nostrum eveniet delectus ex earum sed, aperiam porro?</p>
-                </div>
-                <div class="exp" id="exp-2">
-                    <img src="./assets/housing.png" alt="In-Progress" />
-                    <p id="in-progress"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque exercitationem
-                        nostrum aliquid culpa laborum? Exercitationem nemo maiores dicta inventore velit dolorem
-                        temporibus
-                        adipisci? Molestias obcaecati doloremque rem perspiciatis illum. Debitis.</p>
-                </div>
-            </div>
-        </section>
-        <section id="project-cont">
-            <h1>Projects</h1>
-            <div>
-                <div class="exp" id="exp-1">
-                    <img src="./assets/housing.png" alt="Picture of a house logo" />
-                    <p id="symvara-content">Working at Symvara Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                        Consectetur omnis placeat natus doloribus facilis id, velit est nihil fuga expedita itaque dolor
-                        nostrum eveniet delectus ex earum sed, aperiam porro?</p>
-                </div>
-            </div>
-        </section>
-        <footer></footer>
-    </main>
-</body>
-
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>

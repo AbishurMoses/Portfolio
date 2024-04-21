@@ -1,0 +1,275 @@
+html {
+  font-family: Helvetica, Arial, sans-serif;
+}
+body {
+  background-color: #ede4e4;
+  overflow-x: hidden;
+}
+
+body,
+main,
+div,
+p {
+  padding: 0px;
+  margin: 0px;
+  font-family: Lato, sans-serif;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#main-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ede4e4;
+  gap: 1.5rem;
+}
+
+#experience-cont,
+#project-cont {
+  width: 100vw;
+  height: 100vh;
+}
+
+/* NAVIGATION */
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+  height: 10vh;
+}
+
+#side-nav-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20%;
+  width: 15vw;
+}
+
+/* NAVIGATION CONTENT */
+.title {
+  width: 85vw;
+  margin: 0px 0px 0px 2%;
+  font-size: 1.5rem;
+  letter-spacing: 0.85rem;
+  font-stretch: condensed;
+}
+
+.link-cont,
+.link-cont,
+#dropdown {
+  border-radius: 100%;
+  width: 1.75rem;
+  height: 1.75rem;
+  border: 3px solid #ede4e4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.link-cont:hover {
+  transform: scale(1.5);
+  transition: transform 0.5s ease;
+}
+
+.link-cont {
+  transform: scale(1.2);
+  transition: transform 0.5s ease;
+}
+
+#section-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  width: 70vw;
+}
+
+#about-me {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  width: 100%;
+  gap: 2rem;
+  border-radius: 1.2rem;
+  background-image: url("./assets/random_5.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#wrapper_p {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#image-me {
+  display: flex;
+  height: 99.5%;
+  width: 40%;
+  border-bottom-left-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+  background-color: green;
+  justify-content: center;
+  align-items: center;
+  margin: 0.25rem 0 0 0;
+}
+
+#wrapper_p > p {
+  line-height: 1.8rem;
+  text-indent: 2.5rem;
+  letter-spacing: 0.05rem;
+  text-align: center;
+  font-size: 100%;
+  background-color: #ede4e4;
+  padding: 0rem 0.5rem 0rem 0.5rem;
+  width: 100%;
+}
+
+#symvara,
+#nuclear-power-plant {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#pro-title {
+  font-size: 1.75rem;
+  letter-spacing: 0.3rem;
+  font-stretch: condensed;
+}
+
+#experience-title {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  margin: 5% 0 2% 0;
+}
+
+#experience {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  gap: 5%;
+  overflow-y: scroll;
+  padding: 0 10px 5px 10px;
+  box-sizing: content-box;
+  flex-wrap: wrap;
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+
+#experience::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+#symvara,
+#nuclear-power-plant {
+  width: 40vw;
+  height: auto;
+  background-color: #fcfcfc;
+  border-radius: 1.2rem;
+  box-shadow: 3px 2px 2px black;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: auto;
+  padding: 5px 0 0 0;
+  gap: 4%;
+}
+
+#sym-title,
+#npp-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 0 10px 0 0;
+  text-align: center;
+  padding: 0 0 5px 0;
+}
+
+#sym-range,
+#npp-range {
+  font-size: 1.1rem;
+  color: #4a4848;
+  text-align: center;
+}
+
+#sym-des-cont,
+#npp-des-cont {
+  display: flex;
+  justify-content: center;
+}
+
+#sym-des,
+#npp-des {
+  line-height: 1.5rem;
+  letter-spacing: 0.05rem;
+  padding: 0 5% 0 5%;
+  text-align: center;
+}
+
+#sym-details-cont,
+#npp-details-cont {
+  width: 80%;
+}
+
+#sym-details,
+#npp-details {
+  line-height: 1.5rem;
+  letter-spacing: 0.05rem;
+  padding: 0 5% 0 5%;
+}
+
+#sym-details > li,
+#npp-details > li {
+  margin: 0 0 0.5rem 0;
+}
+
+#sym-lan-cont,
+#npp-lan-cont {
+  width: 90%;
+}
+
+#sym-lan,
+#npp-lan {
+  text-align: center;
+  letter-spacing: 0.02rem;
+  padding: 0 0 15px 0;
+}
+
+#connect {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  height: 20vh;
+}
+
+.resume {
+  background-color: black;
+  color: white;
+  padding: 12px 9px 12px 9px;
+  border-radius: 15%;
+  transition: 0.5s;
+}
+
+.resume:hover {
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+@media (max-width) {
+}
