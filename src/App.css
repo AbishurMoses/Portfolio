@@ -145,16 +145,6 @@ nav {
   align-items: center;
 }
 
-#experience {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  width: 70vw;
-  gap: 8%;
-}
-
 #pro-title {
   font-size: 1.75rem;
   letter-spacing: 0.3rem;
@@ -168,32 +158,28 @@ nav {
   margin: 5% 0 2% 0;
 }
 
-#jobs {
+#experience {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-start;
-  width: 80%;
-  height: 100%;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
   gap: 5%;
+  overflow-y: scroll;
+  padding: 0 10px 5px 10px;
+  box-sizing: content-box;
+  flex-wrap: wrap;
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
 }
 
-#symvara {
-  width: 50%;
-  /* height: 70%; */
-  background-color: #fcfcfc;
-  border-radius: 1.2rem;
-  box-shadow: 3px 2px 2px black;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  overflow: auto;
-  padding: 5px 0 0 0;
-  gap: 4%;
+#experience::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
 }
 
+#symvara,
 #nuclear-power-plant {
-  width: 50%;
+  width: 40vw;
+  height: auto;
   background-color: #fcfcfc;
   border-radius: 1.2rem;
   box-shadow: 3px 2px 2px black;
@@ -264,6 +250,22 @@ nav {
   padding: 0 0 15px 0;
 }
 
-hr {
-  width: 25%;
+#connect {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  height: 20vh;
+}
+
+.resume {
+  background-color: black;
+  color: white;
+  padding: 12px 9px 12px 9px;
+  border-radius: 15%;
+  transition: 0.5s;
+}
+
+.resume:hover {
+  font-size: 1.1rem;
+  cursor: pointer;
 }

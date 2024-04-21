@@ -1,18 +1,16 @@
 import './App.css'
+import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
-import { faBars, faBarsStaggered } from '@fortawesome/free-solid-svg-icons';
-import { useState } from 'react';
+import { faFileDownload, faLightbulb } from '@fortawesome/free-solid-svg-icons';
+import { faLightbulb as faLightbulbOn } from '@fortawesome/free-regular-svg-icons';
+import resume from "./resume/Abishur_Resume.pdf"
 
 function App() {
   const [clickedToolBar, setClickedToolBar] = useState(false);
 
   const toolbar = () => {
     setClickedToolBar(!clickedToolBar);
-  }
-
-  const nuclear = () => {
-    window.open("https://github.com/AbishurMoses/NuclearPowerSimulator", "_blank")
   }
 
   return (
@@ -38,9 +36,9 @@ function App() {
             </div>
             <div id="dropdown" onClick={toolbar}> {
               clickedToolBar ? (
-                <FontAwesomeIcon icon={faBarsStaggered} />
+                <FontAwesomeIcon icon={faLightbulb} />
               ) : (
-                <FontAwesomeIcon icon={faBars} />
+                <FontAwesomeIcon icon={faLightbulbOn} />
               )}
             </div>
           </div>
@@ -58,8 +56,7 @@ function App() {
           <div id="experience-title">
             <p id="pro-title">Projects</p>
           </div>
-          <section id="experience">
-            <div id="jobs">
+            <div id="experience">
               <div id="symvara" >
                 <div id="sym-title-con">
                   <p id="sym-title">Symvara, LLC</p>
@@ -84,6 +81,7 @@ function App() {
                   <p id="sym-lan"><span>Utilized:</span> TypeScript, NestJS, MySQL, Jest, Git, Jira</p>
                 </div>
               </div>
+              {/* ------------------------------------------------------------------------------------------------------------ */}
               <div id="nuclear-power-plant" >
                 <div id="npp-title-con">
                   <p id="npp-title">Nulclear Power Plant</p>
@@ -99,43 +97,20 @@ function App() {
                 </div>
                 <div id="npp-details-cont">
                   <ul id="npp-details">
-                    <li> Developing a backend application using <b>NestJS</b> with <b>MikroORM</b>, <b>MySQL</b> and a Git/Github workflow. </li>
-                    <li> Implemented automatic schema updates using <b>MikroORM</b> for seamless database management. </li>
-                    <li> Created 4 automated testing suites with 200+ individual tests using <b>Jest</b>. </li>
-                    <li> Wrote documentation outlining automated testing procedures and modified existing database documentation. </li>
+                    <li>Used <b>React</b>, <b>JavaScript</b> and <b>yarn</b> to create a front-end application</li>
+                    <li>Connecting to Professor's API via native fetch functions</li>
                   </ul>
                 </div>
                 <div id="npp-lan-cont">
-                  <p id="npp-lan"><span>Utilized:</span> TODO</p>
-                </div>
-              </div>
-              <div id="nuclear-power-plant" >
-                <div id="npp-title-con">
-                  <p id="npp-title">Nulclear Power Plant</p>
-                  <p id="npp-range">Feb. 2022 - Mar. 2022</p>
-                </div>
-                <div id="npp-des-cont">
-                  <p id="npp-des">
-                    Colaborated with a partner to create a Nuclear Power Plant Simulator as part of a Advanced Web Project.
-                    This project utilizes visual aids to display the health of each individual reactor, enablin the user
-                    to make informed decisions. Whether it's managing each reactor individually or using global controls to
-                    oversee them simultaneously.
-                  </p>
-                </div>
-                <div id="npp-details-cont">
-                  <ul id="npp-details">
-                    <li> Developing a backend application using <b>NestJS</b> with <b>MikroORM</b>, <b>MySQL</b> and a Git/Github workflow. </li>
-                    <li> Implemented automatic schema updates using <b>MikroORM</b> for seamless database management. </li>
-                    <li> Created 4 automated testing suites with 200+ individual tests using <b>Jest</b>. </li>
-                    <li> Wrote documentation outlining automated testing procedures and modified existing database documentation. </li>
-                  </ul>
-                </div>
-                <div id="npp-lan-cont">
-                  <p id="npp-lan"><span>Utilized:</span> TODO</p>
+                  <p id="npp-lan"><span>Utilized: </span>React, JavaScript, HTML, CSS</p>
                 </div>
               </div>
             </div>
-          </section>
+          <div id="connect">
+            <a href={resume} download={"Abishur\'s Resume.pdf"} target='_blank'>
+              <div className="resume"><FontAwesomeIcon icon={faFileDownload} />  Download my Resume</div>
+            </a>
+          </div>
         </section>
       </main >
     </div >
