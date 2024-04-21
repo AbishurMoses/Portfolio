@@ -134,28 +134,15 @@ nav {
   font-size: 1.1rem;
   background-color: #ede4e4;
   padding: 0rem 0.5rem 0rem 0.5rem;
-  /* backdrop-filter: blur(20px); */
   width: 65%;
 }
 
-#experience {
-  width: 70vw;
-  /* height: 100vh; */
-}
-
-#symvara {
+#symvara,
+#nuclear-power-plant {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-#projects-layout {
-  width: 80%;
-  height: 80%;
-  display: grid;
-  grid-template-areas: "experience-title symvara symvarac";
-  gap: 5px;
 }
 
 #experience {
@@ -164,20 +151,21 @@ nav {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  width: 70vw;
   gap: 8%;
 }
 
-#pro-title, #personal-pro-tag  {
-  text-align: center;
-  font-size: 2rem;
+#pro-title {
+  font-size: 1.75rem;
+  letter-spacing: 0.3rem;
+  font-stretch: condensed;
 }
 
 #experience-title {
-  width: 20%;
+  width: 100%;
   height: 100%;
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
+  margin: 5% 0 2% 0;
 }
 
 #jobs {
@@ -187,10 +175,11 @@ nav {
   align-items: flex-start;
   width: 80%;
   height: 100%;
+  gap: 5%;
 }
 
 #symvara {
-  width: 450px;
+  width: 50%;
   /* height: 70%; */
   background-color: #fcfcfc;
   border-radius: 1.2rem;
@@ -203,9 +192,8 @@ nav {
   gap: 4%;
 }
 
-#nuclear-sim {
-  width: 450%;
-  /* height: 70%; */
+#nuclear-power-plant {
+  width: 50%;
   background-color: #fcfcfc;
   border-radius: 1.2rem;
   box-shadow: 3px 2px 2px black;
@@ -217,7 +205,8 @@ nav {
   gap: 4%;
 }
 
-#sym-title {
+#sym-title,
+#npp-title {
   font-size: 1.5rem;
   font-weight: 600;
   padding: 0 10px 0 0;
@@ -225,43 +214,51 @@ nav {
   padding: 0 0 5px 0;
 }
 
-#sym-range {
+#sym-range,
+#npp-range {
   font-size: 1.1rem;
   color: #4a4848;
   text-align: center;
 }
 
-#sym-des-cont {
+#sym-des-cont,
+#npp-des-cont {
   display: flex;
   justify-content: center;
 }
 
-#sym-des {
+#sym-des,
+#npp-des {
   line-height: 1.5rem;
   letter-spacing: 0.05rem;
   padding: 0 5% 0 5%;
   text-align: center;
 }
 
-#sym-details-cont {
+#sym-details-cont,
+#npp-details-cont {
   width: 80%;
 }
 
-#sym-details {
+#sym-details,
+#npp-details {
   line-height: 1.5rem;
   letter-spacing: 0.05rem;
   padding: 0 5% 0 5%;
 }
 
-#sym-details > li {
+#sym-details > li,
+#npp-details > li {
   margin: 0 0 0.5rem 0;
 }
 
-#sym-lan-cont {
+#sym-lan-cont,
+#npp-lan-cont {
   width: 90%;
 }
 
-#sym-lan {
+#sym-lan,
+#npp-lan {
   text-align: center;
   letter-spacing: 0.02rem;
   padding: 0 0 15px 0;
@@ -270,82 +267,3 @@ nav {
 hr {
   width: 25%;
 }
-
-#projects {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-start;
-  height: 80vh;
-  width: 100%;
-  gap: 15px;
-}
-
-#nuclear-sim,
-.todo-projects {
-  height: 60%;
-  width: calc(100% / 3);
-  background-color: white;
-  border-radius: 2.5%;
-}
-
-.todo-projects {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(
-    43deg,
-    white 40%,
-    #ede4e4 40%,
-    #ede4e4 60%,
-    white 60%,
-    white 100%
-  );
-}
-
-.todo-projects > p {
-  transform: rotate(45deg);
-  font-size: 1.5rem;
-  text-align: center;
-  display: flex;
-}
-
-/* 
-  Why is the image clipping 
-  When refressed, white line appears between backdrop and image for 3 seconds and disappears 
-*/
-
-#nuclear-sim {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  background-image: url("./assets/nuclear.svg");
-  image-rendering: crisp-edges;
-  background-repeat: no-repeat;
-  background-size: cover;
-  cursor: pointer;
-}
-
-#nuclear-sim > p {
-  font-size: 1.5rem;
-  color: white;
-  height: 25%;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  backdrop-filter: brightness(60%);
-}
-
-/* Custom cursor not working */
-.todo-projects {
-  cursor: url("./assets/hammer.jpg"), auto;
-}
-
-/* How to have child commit actions when parent is hovered? */
-
-/* 
- Unable to zoom-in on hover since background-size is modified. 
- Only works when background-size is set to 100. This won't work since its 
- becomes very small 
-*/
