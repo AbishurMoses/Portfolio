@@ -3,6 +3,7 @@ html {
 }
 body {
   background-color: #ede4e4;
+  overflow-x: hidden;
 }
 
 body,
@@ -27,7 +28,6 @@ a {
   gap: 1.5rem;
 }
 
-#about-me-cont,
 #experience-cont,
 #project-cont {
   width: 100vw;
@@ -98,6 +98,7 @@ nav {
   justify-content: center;
   align-items: center;
   height: 80vh;
+  width: 100%;
   gap: 2rem;
   border-radius: 1.2rem;
   background-image: url("./assets/random_5.svg");
@@ -117,7 +118,7 @@ nav {
 #image-me {
   display: flex;
   height: 99.5%;
-  width: 35%;
+  width: 40%;
   border-bottom-left-radius: 0.5rem;
   border-top-left-radius: 0.5rem;
   background-color: green;
@@ -131,10 +132,10 @@ nav {
   text-indent: 2.5rem;
   letter-spacing: 0.05rem;
   text-align: center;
-  font-size: 1.1rem;
+  font-size: 100%;
   background-color: #ede4e4;
   padding: 0rem 0.5rem 0rem 0.5rem;
-  width: 65%;
+  width: 100%;
 }
 
 #symvara,
@@ -268,4 +269,7 @@ nav {
 .resume:hover {
   font-size: 1.1rem;
   cursor: pointer;
+}
+
+@media (max-width) {
 }
