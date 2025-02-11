@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700&display=swap');
+
 html {
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: 'Work Sans', Arial, sans-serif;
 }
 body {
   background-color: #ede4e4;
@@ -12,11 +14,9 @@ div,
 p {
   padding: 0px;
   margin: 0px;
-  font-family: Lato, sans-serif;
 }
 a {
   text-decoration: none;
-  color: inherit;
 }
 
 #main-cont {
@@ -28,7 +28,7 @@ a {
   gap: 1.5rem;
 }
 
-#experience-cont,
+/* #experience-cont, */
 #project-cont {
   width: 100vw;
   height: 100vh;
@@ -56,14 +56,11 @@ nav {
 .title {
   width: 85vw;
   margin: 0px 0px 0px 2%;
-  font-size: 1.8rem;
-  letter-spacing: 0.25rem;
+  font-size: 2.0rem;
   font-stretch: condensed;
 }
 
-.link-cont,
-.link-cont,
-#dropdown {
+.link-cont {
   border-radius: 100%;
   width: 1.75rem;
   height: 1.75rem;
@@ -135,8 +132,7 @@ nav {
   font-size: 100%;
   background-color: #ede4e4;
   padding: 0rem 0.5rem 0rem 0.5rem;
-  width: 100%;
-  /* border-radius: 0rem .5rem .5rem 0rem; */
+  width: 60%;
 }
 
 #symvara,
@@ -146,6 +142,7 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow-y: auto;
 }
 
 #pro-title {
@@ -163,14 +160,13 @@ nav {
 
 #experience {
   display: flex;
-  flex-direction: column;
+  flex-direction: row; 
   width: 100%;
-  height: 100vh;
   gap: 5%;
-  overflow-y: scroll;
+  overflow-y: hidden; 
   padding: 0 10px 5px 10px;
-  box-sizing: content-box;
-  flex-wrap: wrap;
+  box-sizing: border-box;
+  scroll-snap-type: x mandatory;
   -ms-overflow-style: none; /* Internet Explorer 10+ */
   scrollbar-width: none; /* Firefox */
 }
@@ -179,15 +175,24 @@ nav {
   display: none; /* Safari and Chrome */
 }
 
+#experience > * {
+  scroll-snap-align: start; 
+  flex-shrink: 0;  
+  width: auto; 
+  margin-right: 10px; 
+
+}
+
 #symvara,
 #nuclear-power-plant, 
 #kaizan {
   width: 40vw;
-  height: auto;
+  height: fit-content;
   background-color: #fcfcfc;
   border-radius: 1.2rem;
   box-shadow: 3px 2px 2px black;
   display: flex;
+  flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   overflow: hidden;
@@ -206,6 +211,7 @@ nav {
 .range {
   font-size: 1.1rem;
   color: #4a4848;
+  /* color: blue; */
   text-align: center;
 }
 

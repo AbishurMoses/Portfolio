@@ -2,7 +2,7 @@ import "./App.css";
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { faFileDownload, faLightbulb } from "@fortawesome/free-solid-svg-icons";
+import { faLightbulb } from "@fortawesome/free-solid-svg-icons";
 import {
   faEye,
   faLightbulb as faLightbulbOn,
@@ -42,8 +42,7 @@ function App() {
                 <FontAwesomeIcon icon={faGithub} />
               </a>
             </div>
-            <div id="dropdown" onClick={toolbar}>
-              {" "}
+            <div className="link-cont" onClick={toolbar}>
               {clickedToolBar ? (
                 <FontAwesomeIcon icon={faLightbulbOn} />
               ) : (
@@ -71,17 +70,16 @@ function App() {
           </div>
           <div id="experience">
             <div id="kaizan">
-              <div className="title-con">
+              <div >
                 <p className="exp-title">Kaizan, LLC</p>
                 <p className="range">Jul 2023 - Present</p>
               </div>
               <div className="des-cont">
                 <p className="des">
                   Currently working on a creating a full stack application built to 
-                  
-                  leave tracking, security checks, and housing structure, among
-                  other functionalities tailored to meet the specific needs of
-                  college housing management.
+                  connect user's with (jobs they need done) and users who can complete
+                  the job. The application is designed to be intuitive, (efficient and maybe something else as well)
+
                 </p>
               </div>
               <div className="details-cont">
@@ -112,18 +110,17 @@ function App() {
             </div>
             {/* --------------------------------------------------------------------- */}
             <div id="symvara">
-              <div className="title-con">
+              <div>
                 <p className="exp-title">Symvara, LLC</p>
                 <p className="range">Jul 2023 - April 2023</p>
               </div>
               <div className="des-cont">
                 <p className="des">
-                  Worked with a team of software engineers to create
-                  a comprehensive college housing management software
-                  application. This application was designed to enable clients to manage
-                  leave tracking, security checks, and housing structure, among
-                  other functionalities tailored to meet the specific needs of
-                  college housing management.
+                  Developed a full-stack application designed to seamlessly 
+                  connect users seeking services with skilled professionals 
+                  who can complete them. The platform is built for efficiency,
+                  ease of use, and a streamlined user experience, ensuring seamless 
+                  job matching and transaction management
                 </p>
               </div>
               <div className="details-cont">
@@ -163,7 +160,7 @@ function App() {
             <div id="nuclear-power-plant">
               <div className="exp-title">
                 <p className="title">Nulclear Power Plant</p>
-                <p className="range">Feb 2022 - Mar 2022</p>
+                <p className="range">Feb 2020 - Mar 2022</p>
               </div>
               <div className="des-cont">
                 <p className="des">
@@ -199,11 +196,11 @@ function App() {
                 <FontAwesomeIcon icon={faEye} /> View My Resume
               </div>
             </a>
-            <a href={resume} download={"Abishur's Resume.pdf"} target="_blank">
+            {/* <a href={resume} download={"Abishur's Resume.pdf"} target="_blank">
               <div className="resume">
                 <FontAwesomeIcon icon={faFileDownload} /> Download my Resume
               </div>
-            </a>
+            </a> */}
           </div>
         </section>
       </main>
