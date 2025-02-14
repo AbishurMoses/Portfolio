@@ -102,7 +102,7 @@ nav {
   border-radius: 1.2rem;
   /* background-image: url("./assets/random_5.svg"); */
   background-color: #7a7373;
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat; */
   background-size: cover;
 }
 
@@ -117,14 +117,14 @@ nav {
 
 #image-me {
   display: flex;
-  height: 99.5%;
+  height: 80vh;
   width: 40%;
   border-bottom-left-radius: 0.5rem;
   border-top-left-radius: 0.5rem;
   background-color: green;
   justify-content: center;
   align-items: center;
-  margin: 0.25rem 0 0 0;
+  /* margin: 0.25rem 0 0 0; */
 }
 
 #wrapper_p > p {
@@ -313,7 +313,7 @@ nav {
 
   #image-me {
     width: 60%;
-    height: 50%;
+    height: 60%;
   }
 
   #wrapper_p {
@@ -329,6 +329,6 @@ nav {
   #wrapper_p > p {
     /* background-color: white; */
     width: 80%;
-    height: 50%;
+    height: 40%;
   }
 }
