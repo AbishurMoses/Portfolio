@@ -2,14 +2,11 @@ import "./App.css";
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { faLightbulb, faRightLeft, faRightLong } from "@fortawesome/free-solid-svg-icons";
-import {
-  faEye,
-  faLightbulb as faLightbulbOn,
-} from "@fortawesome/free-regular-svg-icons";
+import { faLightbulb, faRightLong } from "@fortawesome/free-solid-svg-icons";
+import { faLightbulb as faLightbulbOn } from "@fortawesome/free-regular-svg-icons";
 import resume from "./resume/Abishur_Resume.pdf";
 
-function App() {  
+function App() {
   const [clickedToolBar, setClickedToolBar] = useState(false);
 
   const toolbar = () => {
@@ -54,15 +51,21 @@ function App() {
         <section id="section-container">
           <section id="about-me">
             <div id="wrapper_p">
-              <div id="image-me">Profile picture goes here</div>
-              <p>
-                Hi! I'm Abishur Moses, a Computer Science student eager to
-                leverage technology to create lasting solutions. I have been
-                able to cultivate my skills by working with a team of dedicated
-                developers and engineers to create robust software. When my
-                laptop and Starbucks are closed, you can find me playing
-                badminton, ping pong or almost any sport that involves a racket.
-              </p>
+              <div id="image-me">
+                {/* <img src='../src/assets/ProfilePic1.jpg' alt="Picture of Abishur Moses" /> */}
+              </div>
+              <div id="p-tag">
+                <p id="info-title">Hey,  I'm a full stack developer.</p>
+                <p id="info">
+                  I'm also a Computer Science student eager to 
+                  leverage technology to create lasting solutions. I have been
+                  able to cultivate my skills by working with a team of
+                  dedicated developers and engineers to create robust software.
+                  When my laptop and Starbucks are closed, you can find me
+                  playing badminton, ping pong or almost any sport that involves
+                  a racket.
+                </p>
+              </div>
             </div>
           </section>
           <div id="experience-title">
@@ -195,8 +198,7 @@ function App() {
           <div id="connect">
             <a href={resume} target="_blank" rel="noopener noreferrer">
               <div className="resume">
-              <FontAwesomeIcon icon={VisualViewport} /> View My Resume
-
+                <FontAwesomeIcon icon={VisualViewport} /> View My Resume
               </div>
             </a>
             {/* <a href={resume} download={"Abishur's Resume.pdf"} target="_blank">
