@@ -2,14 +2,14 @@ import "./App.css";
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { faLightbulb } from "@fortawesome/free-solid-svg-icons";
+import { faLightbulb, faRightLeft, faRightLong } from "@fortawesome/free-solid-svg-icons";
 import {
   faEye,
   faLightbulb as faLightbulbOn,
 } from "@fortawesome/free-regular-svg-icons";
 import resume from "./resume/Abishur_Resume.pdf";
 
-function App() {
+function App() {  
   const [clickedToolBar, setClickedToolBar] = useState(false);
 
   const toolbar = () => {
@@ -66,20 +66,22 @@ function App() {
             </div>
           </section>
           <div id="experience-title">
-            <p id="pro-title">Projects</p>
+            <p id="pro-title">Projects </p>
+            <FontAwesomeIcon icon={faRightLong} />
           </div>
+
           <div id="experience">
             <div id="kaizan">
-              <div >
+              <div>
                 <p className="exp-title">Kaizan, LLC</p>
                 <p className="range">Jul 2023 - Present</p>
               </div>
               <div className="des-cont">
                 <p className="des">
-                  Currently working on a creating a full stack application built to 
-                  connect user's with (jobs they need done) and users who can complete
-                  the job. The application is designed to be intuitive, (efficient and maybe something else as well)
-
+                  Currently working on a creating a full stack application built
+                  to connect user's with (jobs they need done) and users who can
+                  complete the job. The application is designed to be intuitive,
+                  (efficient and maybe something else as well)
                 </p>
               </div>
               <div className="details-cont">
@@ -97,14 +99,14 @@ function App() {
                     <b>NestJS</b>
                   </li>
                   <li>
-                  Designed a responsive and intuitive UI/UX using <b>Figma</b>
+                    Designed a responsive and intuitive UI/UX using <b>Figma</b>
                   </li>
                 </ul>
               </div>
               <div className="lan-cont">
                 <p className="lan">
-                  <span>Utilized:</span> TypeScript, NestJS, React, Vertabelo, MySQL Workbench, Insomnia, Figma, Docker Git,
-                  Jira
+                  <span>Utilized:</span> TypeScript, NestJS, React, Vertabelo,
+                  MySQL Workbench, Insomnia, Figma, Docker Git, Jira
                 </p>
               </div>
             </div>
@@ -116,10 +118,10 @@ function App() {
               </div>
               <div className="des-cont">
                 <p className="des">
-                  Developed a full-stack application designed to seamlessly 
-                  connect users seeking services with skilled professionals 
-                  who can complete them. The platform is built for efficiency,
-                  ease of use, and a streamlined user experience, ensuring seamless 
+                  Developed a full-stack application designed to seamlessly
+                  connect users seeking services with skilled professionals who
+                  can complete them. The platform is built for efficiency, ease
+                  of use, and a streamlined user experience, ensuring seamless
                   job matching and transaction management
                 </p>
               </div>
@@ -193,7 +195,8 @@ function App() {
           <div id="connect">
             <a href={resume} target="_blank" rel="noopener noreferrer">
               <div className="resume">
-                <FontAwesomeIcon icon={faEye} /> View My Resume
+              <FontAwesomeIcon icon={VisualViewport} /> View My Resume
+
               </div>
             </a>
             {/* <a href={resume} download={"Abishur's Resume.pdf"} target="_blank">
