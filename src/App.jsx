@@ -55,7 +55,7 @@ function App() {
                 {/* <img src='../src/assets/ProfilePic1.jpg' alt="Picture of Abishur Moses" /> */}
               </div>
               <div id="p-tag">
-                <p id="info-title">Hey,  I'm a full stack developer.</p>
+                <p id="info-title">Hey, I'm a full stack developer.</p>
                 <p id="info">
                   I'm also a Computer Science student eager to 
                   leverage technology to create lasting solutions. I have been

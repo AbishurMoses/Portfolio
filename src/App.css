@@ -143,7 +143,6 @@ nav {
 }
 
 #info {
-
   line-height: 1.8rem;
   text-indent: 2.5rem;
   letter-spacing: 0.05rem;
@@ -219,7 +218,7 @@ align-items: center;
   height: fit-content;
   background-color: #fcfcfc;
   border-radius: 1.2rem;
-  box-shadow: 3px 2px 2px black;
+  box-shadow: 2px 2px 2px black;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
