@@ -50,27 +50,24 @@ function App() {
         </nav>
         <section id="section-container">
           <section id="about-me">
-            <div id="wrapper_p">
-              <div id="image-me">
-                {/* <img src='../src/assets/ProfilePic1.jpg' alt="Picture of Abishur Moses" /> */}
-              </div>
-              <div id="p-tag">
-                <p id="info-title">Hey, I'm a full stack developer.</p>
-                <p id="info">
-                  I'm also a Computer Science student eager to 
-                  leverage technology to create lasting solutions. I have been
-                  able to cultivate my skills by working with a team of
-                  dedicated developers and engineers to create robust software.
-                  When my laptop and Starbucks are closed, you can find me
-                  playing badminton, ping pong or almost any sport that involves
-                  a racket.
-                </p>
-              </div>
+            <div id="image-me"></div>
+            <div id="p-tag">
+              <p id="info-title">Hey, I'm a full stack developer.</p>
+              <p id="info">
+                I'm also a Computer Science student eager to leverage technology
+                to create lasting solutions. I have been able to cultivate my
+                skills by working with a team of dedicated developers and
+                engineers to create robust software. When my laptop and
+                Starbucks are closed, you can find me playing badminton, ping
+                pong or almost any sport that involves a racket.
+              </p>
             </div>
           </section>
           <div id="experience-title">
             <p id="pro-title">Projects </p>
-            <FontAwesomeIcon icon={faRightLong} />
+            <div id="project-left">
+              <FontAwesomeIcon icon={faRightLong} />
+            </div>
           </div>
 
           <div id="experience">
