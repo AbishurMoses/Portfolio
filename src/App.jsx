@@ -17,17 +17,17 @@ function App() {
     <div>
       <main id="main-cont">
         <nav>
-          <div id="title-cont">
+          {/* <div id="title-cont">
             <p className="title">Abishur Moses</p>
-          </div>
-          <div id="side-nav-cont">
+          </div> */}
+          {/* <div id="side-nav-cont"> */}
             <div className="link-cont">
               <a
                 href="https://www.linkedin.com/in/abishur-moses/"
                 target="_blank"
                 id="link1"
               >
-                <FontAwesomeIcon icon={faLinkedin} />
+                <FontAwesomeIcon icon={faLinkedin} size="2x"/>
               </a>
             </div>
             <div className="link-cont">
@@ -36,23 +36,15 @@ function App() {
                 target="_blank"
                 id="link2"
               >
-                <FontAwesomeIcon icon={faGithub} />
+                <FontAwesomeIcon icon={faGithub} size="2x"/>
               </a>
             </div>
-            <div className="link-cont" onClick={toolbar}>
-              {clickedToolBar ? (
-                <FontAwesomeIcon icon={faLightbulbOn} />
-              ) : (
-                <FontAwesomeIcon icon={faLightbulb} />
-              )}
-            </div>
-          </div>
         </nav>
         <section id="section-container">
           <section id="about-me">
             <div id="image-me"></div>
             <div id="p-tag">
-              <p id="info-title">Hey, I'm a full stack developer.</p>
+              <p id="info-title">Hey, I'm Abishur! <br/> I'm a full stack developer.</p>
               <p id="info">
                 I'm also a Computer Science student eager to leverage technology
                 to create lasting solutions. I have been able to cultivate my
@@ -63,11 +55,8 @@ function App() {
               </p>
             </div>
           </section>
-          <div id="experience-title">
-            <p id="pro-title">Projects </p>
-            <div id="project-left">
-              <FontAwesomeIcon icon={faRightLong} />
-            </div>
+          <div id="project-title">
+            <p>Projects </p>
           </div>
 
           <div id="experience">
@@ -160,8 +149,8 @@ function App() {
             </div>
             {/* ------------------------------------------------------------------------------------------------------------ */}
             <div id="nuclear-power-plant">
-              <div className="exp-title">
-                <p className="title">Nulclear Power Plant</p>
+              <div>
+                <p className="exp-title">Nuclear Power Plant</p>
                 <p className="range">Feb 2020 - Mar 2022</p>
               </div>
               <div className="des-cont">
