@@ -291,4 +291,8 @@ nav {
   #experience > div {
     width: 100%
   }
+
+  #p-tag {
+    width: 100%;
+  }
 }

@@ -21,30 +21,32 @@ function App() {
             <p className="title">Abishur Moses</p>
           </div> */}
           {/* <div id="side-nav-cont"> */}
-            <div className="link-cont">
-              <a
-                href="https://www.linkedin.com/in/abishur-moses/"
-                target="_blank"
-                id="link1"
-              >
-                <FontAwesomeIcon icon={faLinkedin} size="2x"/>
-              </a>
-            </div>
-            <div className="link-cont">
-              <a
-                href="https://github.com/AbishurMoses?tab=overview&from=2024-01-01&to=2024-01-06"
-                target="_blank"
-                id="link2"
-              >
-                <FontAwesomeIcon icon={faGithub} size="2x"/>
-              </a>
-            </div>
+          <div className="link-cont">
+            <a
+              href="https://www.linkedin.com/in/abishur-moses/"
+              target="_blank"
+              id="link1"
+            >
+              <FontAwesomeIcon icon={faLinkedin} size="2x" />
+            </a>
+          </div>
+          <div className="link-cont">
+            <a
+              href="https://github.com/AbishurMoses?tab=overview&from=2024-01-01&to=2024-01-06"
+              target="_blank"
+              id="link2"
+            >
+              <FontAwesomeIcon icon={faGithub} size="2x" />
+            </a>
+          </div>
         </nav>
         <section id="section-container">
           <section id="about-me">
             <div id="image-me"></div>
             <div id="p-tag">
-              <p id="info-title">Hey, I'm Abishur! <br/> I'm a full stack developer.</p>
+              <p id="info-title">
+                Hey, I'm Abishur! <br /> I'm a full stack developer.
+              </p>
               <p id="info">
                 I'm also a Computer Science student eager to leverage technology
                 to create lasting solutions. I have been able to cultivate my
@@ -67,10 +69,11 @@ function App() {
               </div>
               <div className="des-cont">
                 <p className="des">
-                  Currently working on a creating a full stack application built
-                  to connect user's with (jobs they need done) and users who can
-                  complete the job. The application is designed to be intuitive,
-                  (efficient and maybe something else as well)
+                  Architected and developed a full-stack freelance marketplace
+                  platform connecting clients with skilled professionals. Built
+                  with an intuitive user interface and robust database design.
+                  The application enables users to browse services, manage
+                  projects, and complete transactions seamlessly.
                 </p>
               </div>
               <div className="details-cont">
@@ -107,11 +110,11 @@ function App() {
               </div>
               <div className="des-cont">
                 <p className="des">
-                  Developed a full-stack application designed to seamlessly
-                  connect users seeking services with skilled professionals who
-                  can complete them. The platform is built for efficiency, ease
-                  of use, and a streamlined user experience, ensuring seamless
-                  job matching and transaction management
+                  Designed and developed the database and backend application
+                  for property management by implementing comprehensive API
+                  endpoints and test coverage. The system facilitates efficient
+                  property tracking, tenant management, and maintenance request
+                  handling through robust REST APIs. 
                 </p>
               </div>
               <div className="details-cont">
@@ -156,11 +159,11 @@ function App() {
               <div className="des-cont">
                 <p className="des">
                   Colaborated with a partner to create a Nuclear Power Plant
-                  Simulator as part of a Advanced Web Project. This project
-                  utilizes visual aids to display the health of each individual
-                  reactor, enablin the user to make informed decisions. Whether
-                  it's managing each reactor individually or using global
-                  controls to oversee them simultaneously.
+                  Simulator as an Advanced Web Project. The project utilizes
+                  visual aids to display the health of each individual reactor,
+                  enabling the user to make informed decisions. Whether it's
+                  managing each reactor individually or using global controls to
+                  oversee them simultaneously.
                 </p>
               </div>
               <div className="details-cont">
