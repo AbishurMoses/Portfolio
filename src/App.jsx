@@ -121,7 +121,7 @@ function App() {
                 <ul className="details">
                   <li>
                     {" "}
-                    Developing using <b>NestJS</b> with <b>MikroORM</b>,{" "}
+                    Developed using <b>NestJS</b> with <b>MikroORM</b>,{" "}
                     <b>MySQL</b> and a Git/Github workflow.{" "}
                   </li>
                   <li>
