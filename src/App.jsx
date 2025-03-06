@@ -88,7 +88,7 @@ function App() {
                   </li>
                   <li>
                     Wrote 13 RESTful API endpoints in a backend system using
-                    <b>NestJS</b>
+                     <b>NestJS</b>
                   </li>
                   <li>
                     Designed a responsive and intuitive UI/UX using <b>Figma</b>
