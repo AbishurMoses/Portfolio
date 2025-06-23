@@ -88,7 +88,7 @@ function App() {
                   </li>
                   <li>
                     Wrote 13 RESTful API endpoints in a backend system using
-                     <b>NestJS</b>
+                    <b>NestJS</b>
                   </li>
                   <li>
                     Designed a responsive and intuitive UI/UX using <b>Figma</b>
@@ -114,7 +114,7 @@ function App() {
                   for property management by implementing comprehensive API
                   endpoints and test coverage. The system facilitates efficient
                   property tracking, tenant management, and maintenance request
-                  handling through robust REST APIs. 
+                  handling through robust REST APIs.
                 </p>
               </div>
               <div className="details-cont">
@@ -151,35 +151,40 @@ function App() {
               </div>
             </div>
             {/* ------------------------------------------------------------------------------------------------------------ */}
-            <div id="nuclear-power-plant">
+            <div id="sauragflow">
               <div>
-                <p className="exp-title">Nuclear Power Plant</p>
-                <p className="range">Feb 2020 - Mar 2022</p>
+                <p className="exp-title">SAURagflow</p>
+                <p className="range">Mar 2025 - May 2025</p>
               </div>
               <div className="des-cont">
                 <p className="des">
-                  Colaborated with a partner to create a Nuclear Power Plant
-                  Simulator as an Advanced Web Project. The project utilizes
-                  visual aids to display the health of each individual reactor,
-                  enabling the user to make informed decisions. Whether it's
-                  managing each reactor individually or using global controls to
-                  oversee them simultaneously.
+                  An LLM interface for exploring university history.
+                  Collaborated with a partner to design and create a Flask
+                  backend that acted as middleware between the frontend and
+                  Llama 3: handling user queries, routing them to the model and
+                  processing responses.
                 </p>
               </div>
               <div className="details-cont">
                 <ul className="details">
                   <li>
-                    Used <b>React</b>, <b>JavaScript</b> and <b>yarn</b> to
-                    create a front-end application
+                    Served as <b>Scrum Master</b> to organize and manage tasks
+                    and sprints using <b>Jira</b>
                   </li>
                   <li>
-                    Connecting to Professor's API via native fetch functions
+                    Sanitized training data for <b>Llama 3</b> to ensure
+                    accurate results
+                  </li>
+                  <li>
+                    Built <b>RESTful endpoints</b> to support LlamA 3 training
+                    and document processing using <b>DocTR</b>
                   </li>
                 </ul>
               </div>
               <div className="lan-cont">
                 <p className="lan">
-                  <span>Utilized: </span>React, JavaScript, HTML, CSS
+                  <span>Utilized: </span>Flask, React, Python, JavaScript, Git,
+                  Docker, Jira
                 </p>
               </div>
             </div>
